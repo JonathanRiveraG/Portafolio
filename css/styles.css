@@ -12,3 +12,105 @@ h1 {
     color:#bedfd7;
 
 }
+
+.titulo-seccion {
+    text-align: center;
+    color: #bedfd7;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#habilidades, #proyectos {
+    padding: 70px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255.0.15);
+    border-left: 4px solid #64ffda;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.card h4 {
+    color: #bedfd7;
+    margin: 0;
+}
+
+.card p {
+    color: #ccd6f6;
+    margin-top: 10px;
+}
+
+/*PROYECTOS*/
+.proyecto {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #0a192f;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.proyecto-info {
+    padding: 15px;
+}
+
+.proyecto-info h3 {
+    color: #0a192f;
+    margin: 0;
+}
+
+/*CONTACTO*/
+#contacto {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0,0,0,0.2);
+    margin-top: 50px;
+}
+
+#contacto h2 {
+    color: #bedfd7;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 768px) {
+    .titulo-seccion {
+        font-size: 26px;
+    }
+
+    #habilidades, #proyectos {
+        padding: 40px 15px;
+    }
+
+    .contenedor-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto img {
+        height: 200px;
+    }
+
+    #contacto {
+        padding: 50px 15px;
+    }
+
+    nav, header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
